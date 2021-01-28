@@ -20,7 +20,7 @@ public class SceneLoader : MonoBehaviour
     IEnumerator WaitForTime()
     {
         yield return new WaitForSeconds(waitingTime);
-        LoadNextScene();
+        LoadNextScene(); 
     }
 
     public void LoadNextScene()
