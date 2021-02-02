@@ -1,17 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
     [SerializeField] float projectileSpeed =1f, projectileRotation =1f;
     [SerializeField] int projectileDamage = 20;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     public int GetProjectileDamage()
     {
@@ -20,7 +13,13 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        var health = collision.GetComponent<Health>();
+        var attacker = collision.GetComponent<Attacker>();
+        if(health && attacker)
+        {
+            health.DealDamage(projectileDamage);
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1414745829377941810}
   - component: {fileID: 1414745829377941811}
   - component: {fileID: 1747213738}
+  - component: {fileID: -6211612506993732957}
+  - component: {fileID: -5539845709526304488}
   m_Layer: 10
   m_Name: Cactus
   m_TagString: Untagged
@@ -119,6 +121,53 @@ MonoBehaviour:
   projectile: {fileID: -6113841214494356311, guid: fb8e894eef144714991830cacffb96b0,
     type: 3}
   projectilePosition: {fileID: 4323867370304212473}
+--- !u!50 &-6211612506993732957
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414745829377941808}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &-5539845709526304488
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414745829377941808}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.6273289, y: 0.5416914}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 1.2460318, y: 1}
+    newSize: {x: 1.57, y: 1.26}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5760927, y: 0.91661716}
+  m_EdgeRadius: 0
 --- !u!1 &4323867370304212473
 GameObject:
   m_ObjectHideFlags: 0
