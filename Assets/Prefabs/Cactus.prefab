@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1414745829377941810}
   - component: {fileID: 1414745829377941811}
   - component: {fileID: 1747213738}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cactus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 225b947a2849cb24585bad0c971dfc22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 8734832752466262126, guid: fb8e894eef144714991830cacffb96b0,
+  projectile: {fileID: -6113841214494356311, guid: fb8e894eef144714991830cacffb96b0,
     type: 3}
   projectilePosition: {fileID: 4323867370304212473}
 --- !u!1 &4323867370304212473
@@ -143,7 +143,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4323867370304212473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.31, y: 0.58, z: 0}
+  m_LocalPosition: {x: -0.01, y: 0.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1414745829377941813}

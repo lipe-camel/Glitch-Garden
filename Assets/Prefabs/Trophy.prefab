@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2414211981555121676}
   - component: {fileID: 2414211981555121679}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trophy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
