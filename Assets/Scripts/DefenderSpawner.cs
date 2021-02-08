@@ -6,16 +6,30 @@ public class DefenderSpawner : MonoBehaviour
 {
     [SerializeField] GameObject defender;
 
+    private void OnMouseDown()
+    {
+        SpawnDefender(GetSquareClicked());
+    }
+
     private Vector2 GetSquareClicked()
     {
         var mousePos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         var worldPos = Camera.main.ScreenToWorldPoint(mousePos);
-        return worldPos;
+        var gridPos = SnapToGrid(worldPos);
+        return gridPos;
     }
 
-    private void OnMouseDown()
+    private Vector2 SnapToGrid(Vector2 rawWorldPos)
     {
-        GameObject newDefender = Instantiate(defender, GetSquareClicked(), Quaternion.identity) as GameObject;
+        float newX = Mathf.RoundToInt(rawWorldPos.x);
+        float newY = Mathf.RoundToInt(rawWorldPos.y);
+        return new Vector2(newX, newY);
     }
 
+    private void SpawnDefender(Vector2 worldPos)
+    {
+        GameObject newDefender = Instantiate(defender,
+            worldPos + defender.GetComponent<Defender>().spawnOffset,
+            defender.transform.rotation) as GameObject;
+    }
 }
