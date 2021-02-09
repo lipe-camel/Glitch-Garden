@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject defender;
+    [SerializeField] Defender defender;
+
+    public void SetSelectedDefender(Defender defenderToSelect)
+    {
+        defender = defenderToSelect;
+    }
 
     private void OnMouseDown()
     {
@@ -28,8 +33,8 @@ public class DefenderSpawner : MonoBehaviour
 
     private void SpawnDefender(Vector2 worldPos)
     {
-        GameObject newDefender = Instantiate(defender,
+        Defender newDefender = Instantiate(defender,
             worldPos + defender.GetComponent<Defender>().spawnOffset,
-            defender.transform.rotation) as GameObject;
+            defender.transform.rotation);
     }
 }
