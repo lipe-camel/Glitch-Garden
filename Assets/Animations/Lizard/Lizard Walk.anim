@@ -68,7 +68,7 @@ AnimationClip:
       value: {fileID: 6716164222309021627, guid: 5224ed27351cabc4cac6bc3ad8301208,
         type: 3}
     attribute: m_Sprite
-    path: 
+    path: Lizard Sprites
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 24
@@ -79,7 +79,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 950960830
       attribute: 0
       script: {fileID: 0}
       typeID: 212

@@ -152,7 +152,7 @@ AnimationClip:
       value: {fileID: -9207953337077874798, guid: f9e473b4b2980224aa5a66f60e99ccb4,
         type: 3}
     attribute: m_Sprite
-    path: 
+    path: Cactus Sprites
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 24
@@ -163,7 +163,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 1347710464
       attribute: 0
       script: {fileID: 0}
       typeID: 212

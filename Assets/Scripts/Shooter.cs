@@ -5,9 +5,9 @@ using UnityEngine;
 public class Shooter : MonoBehaviour
 {
     [SerializeField] Projectile projectile;
-    [SerializeField] GameObject projectilePosition;
+    [SerializeField] Vector3 projectilePosition;
     public void Fire()
     {
-        Instantiate(projectile, projectilePosition.transform.position, Quaternion.identity);
+        Instantiate(projectile, transform.position + projectilePosition, Quaternion.identity);
     }
 }

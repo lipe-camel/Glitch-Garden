@@ -6,6 +6,13 @@ public class DefenderSpawner : MonoBehaviour
 {
     [SerializeField] Defender defender;
 
+    StarDisplay starDisplay;
+
+    private void Start()
+    {
+        starDisplay = FindObjectOfType<StarDisplay>();
+    }
+
     public void SetSelectedDefender(Defender defenderToSelect)
     {
         defender = defenderToSelect;
@@ -33,8 +40,7 @@ public class DefenderSpawner : MonoBehaviour
 
     private void SpawnDefender(Vector2 worldPos)
     {
-        Defender newDefender = Instantiate(defender,
-            worldPos + defender.GetComponent<Defender>().spawnOffset,
-            defender.transform.rotation);
+        starDisplay.SpendStars(defender.starCost); 
+        Defender newDefender = Instantiate(defender, worldPos, defender.transform.rotation);
     }
 }
