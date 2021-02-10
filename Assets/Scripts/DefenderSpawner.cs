@@ -5,12 +5,19 @@ using UnityEngine;
 public class DefenderSpawner : MonoBehaviour
 {
     [SerializeField] Defender defender;
-
     StarDisplay starDisplay;
+
 
     private void Start()
     {
         starDisplay = FindObjectOfType<StarDisplay>();
+    }
+
+
+    //Spawn
+    private void OnMouseDown()
+    {
+        AttemptToSpawn(GetSquareClicked());
     }
 
     public void SetSelectedDefender(Defender defenderToSelect)
@@ -18,11 +25,22 @@ public class DefenderSpawner : MonoBehaviour
         defender = defenderToSelect;
     }
 
-    private void OnMouseDown()
+    private void SpawnDefender(Vector2 worldPos)
     {
-        SpawnDefender(GetSquareClicked());
+        starDisplay.SpendStars(defender.GetStarCost()); 
+        Defender newDefender = Instantiate(defender, worldPos, defender.transform.rotation);
     }
 
+    private void AttemptToSpawn(Vector2 worldPos)
+    {
+        if (starDisplay.HasEnough(defender.GetStarCost()))
+        {
+            SpawnDefender(worldPos);
+        }
+    }
+
+
+    //Calculate Spawn Position
     private Vector2 GetSquareClicked()
     {
         var mousePos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
@@ -38,9 +56,4 @@ public class DefenderSpawner : MonoBehaviour
         return new Vector2(newX, newY);
     }
 
-    private void SpawnDefender(Vector2 worldPos)
-    {
-        starDisplay.SpendStars(defender.starCost); 
-        Defender newDefender = Instantiate(defender, worldPos, defender.transform.rotation);
-    }
 }

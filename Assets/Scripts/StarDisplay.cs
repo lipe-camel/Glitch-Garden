@@ -18,7 +18,6 @@ public class StarDisplay : MonoBehaviour
     private void UpdateScore()
     {
         starDisplay.text = stars.ToString();
-        Debug.Log(stars.ToString());
     }
 
     public void AddStars(int amount)
@@ -29,10 +28,15 @@ public class StarDisplay : MonoBehaviour
 
     public void SpendStars(int amount)
     {
-        if(stars >= amount)
+        if(HasEnough(amount))
         {
             stars -= amount;
             UpdateScore();
         }
+    }
+
+    public bool HasEnough(int amount)
+    {
+        return stars >= amount;
     }
 }
