@@ -5,11 +5,13 @@ using UnityEngine;
 public class DefenderSpawner : MonoBehaviour
 {
     [SerializeField] Defender defender;
+    Defender[] defenders;
     StarDisplay starDisplay;
 
 
     private void Start()
     {
+        defenders = FindObjectsOfType<Defender>();
         starDisplay = FindObjectOfType<StarDisplay>();
     }
 
@@ -28,8 +30,17 @@ public class DefenderSpawner : MonoBehaviour
 
     private void SpawnDefender(Vector2 worldPos)
     {
-        starDisplay.SpendStars(defender.GetStarCost()); 
+        foreach (Defender defender in defenders)
+        {
+            Vector2 defenderPos = new Vector2(defender.transform.position.x, defender.transform.position.y);
+            if(defenderPos == worldPos)
+            {
+                return;
+            }
+        }
+        starDisplay.SpendStars(defender.GetStarCost());
         Defender newDefender = Instantiate(defender, worldPos, defender.transform.rotation);
+        defenders = FindObjectsOfType<Defender>();
     }
 
     private void AttemptToSpawn(Vector2 worldPos)
