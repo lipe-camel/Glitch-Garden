@@ -17,6 +17,7 @@ public class DefenderSpawner : MonoBehaviour
     //Spawn
     private void OnMouseDown()
     {
+        if (!defender) { return; }
         AttemptToSpawn(GetSquareClicked());
     }
 
