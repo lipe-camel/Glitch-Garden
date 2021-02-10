@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2414211981555121676}
   - component: {fileID: 2414211981555121679}
-  - component: {fileID: 6149416211039582268}
   - component: {fileID: 1230837684129657778}
   - component: {fileID: 4575913619976397901}
+  - component: {fileID: 6149416211039582268}
+  - component: {fileID: 2393960341185535419}
   m_Layer: 10
   m_Name: Trophy
   m_TagString: Untagged
@@ -54,19 +55,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6149416211039582268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2414211981555121678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5650dc246c6de4fb32dfb2d7dc360b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starCost: 25
 --- !u!50 &1230837684129657778
 Rigidbody2D:
   serializedVersion: 4
@@ -114,6 +102,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.75742555, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6149416211039582268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2414211981555121678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d5650dc246c6de4fb32dfb2d7dc360b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starCost: 25
+--- !u!114 &2393960341185535419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2414211981555121678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b00f33580932de4fa0a3b61d4703a89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mintime: 5
+  maxtime: 7
+  stars: 10
+  particle: {fileID: 5450871156437583368, guid: 25fef59fdc077cf4b9908a25398181a2,
+    type: 3}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &2414211982054771204
 GameObject:
   m_ObjectHideFlags: 0
