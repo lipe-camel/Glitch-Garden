@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4575913619976397901}
   - component: {fileID: 6149416211039582268}
   - component: {fileID: 2393960341185535419}
+  - component: {fileID: -5813996841310875614}
   m_Layer: 10
   m_Name: Trophy
   m_TagString: Untagged
@@ -86,7 +87,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.00000011920929, y: 0}
@@ -133,6 +134,22 @@ MonoBehaviour:
   particle: {fileID: 5450871156437583368, guid: 25fef59fdc077cf4b9908a25398181a2,
     type: 3}
   particleOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &-5813996841310875614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2414211981555121678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a523ca0b09424094ab7a0ada0b3b4e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 60
+  deathVFX: {fileID: 5450871156437583368, guid: 25fef59fdc077cf4b9908a25398181a2,
+    type: 3}
+  deathVFXOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &2414211982054771204
 GameObject:
   m_ObjectHideFlags: 0

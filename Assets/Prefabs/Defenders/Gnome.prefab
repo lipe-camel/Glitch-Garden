@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 5578341633596183337}
   - component: {fileID: 8935699167555480376}
   - component: {fileID: 9112122921259104155}
+  - component: {fileID: -1326564334141585169}
   m_Layer: 10
   m_Name: Gnome
   m_TagString: Untagged
@@ -168,7 +169,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.00000011920929, y: 0}
@@ -212,3 +213,19 @@ MonoBehaviour:
   projectile: {fileID: 5408283762214953375, guid: 15e70763ef2b44942901fedfb5405e55,
     type: 3}
   projectilePosition: {x: 0.3, y: 0, z: 0}
+--- !u!114 &-1326564334141585169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7914773234916657921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a523ca0b09424094ab7a0ada0b3b4e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 150
+  deathVFX: {fileID: 5450871156437583368, guid: 25fef59fdc077cf4b9908a25398181a2,
+    type: 3}
+  deathVFXOffset: {x: 0, y: 0, z: 0}
