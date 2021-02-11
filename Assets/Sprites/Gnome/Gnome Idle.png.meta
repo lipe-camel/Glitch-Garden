@@ -1,43 +1,28 @@
 fileFormatVersion: 2
-guid: 23cd40852fb4702428928fe7914903af
+guid: 76bc3719ff38f544e909d1e3f1b693c1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8189650667827876979
-    second: Fox Running_0
+      213: 3130550414927973559
+    second: Gnome Idle_0
   - first:
-      213: -5447189599148108117
-    second: Fox Running_1
+      213: 2358206080403367946
+    second: Gnome Idle_1
   - first:
-      213: 2411212283926625588
-    second: Fox Running_2
+      213: 3003829924640282716
+    second: Gnome Idle_2
   - first:
-      213: 4183376534722103051
-    second: Fox Running_3
+      213: -1592119229907906375
+    second: Gnome Idle_3
   - first:
-      213: 1878933213425258762
-    second: Fox Running_4
+      213: -1443386475708467166
+    second: Gnome Idle_4
   - first:
-      213: -2102101676120516931
-    second: Fox Running_5
+      213: 7517929661485990397
+    second: Gnome Idle_5
   - first:
-      213: -1248797723352466313
-    second: Fox Running_6
-  - first:
-      213: -9066932197608732810
-    second: Fox Running_7
-  - first:
-      213: -555244608545739551
-    second: Fox Running_8
-  - first:
-      213: 3294793243138151688
-    second: Fox Running_9
-  - first:
-      213: -7722825254393066200
-    second: Fox Running_10
-  - first:
-      213: -4355890550225760130
-    second: Fox Running_11
+      213: 1574615031417776517
+    second: Gnome Idle_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -81,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 140
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -135,139 +120,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fox Running_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 139
-        width: 153
-        height: 139
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 374db6a44eb77a170800000000000000
-      internalID: 8189650667827876979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fox Running_1
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 139
-        width: 153
-        height: 139
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba613968be1b764b0800000000000000
-      internalID: -5447189599148108117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fox Running_2
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 139
-        width: 153
-        height: 139
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43d318d0cc8567120800000000000000
-      internalID: 2411212283926625588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fox Running_3
-      rect:
-        serializedVersion: 2
-        x: 459
-        y: 139
-        width: 153
-        height: 139
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b07c0d93bc65e0a30800000000000000
-      internalID: 4183376534722103051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fox Running_4
-      rect:
-        serializedVersion: 2
-        x: 612
-        y: 139
-        width: 153
-        height: 139
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0155e67dcf431a10800000000000000
-      internalID: 1878933213425258762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fox Running_5
-      rect:
-        serializedVersion: 2
-        x: 765
-        y: 139
-        width: 153
-        height: 139
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db65519b9a5d3d2e0800000000000000
-      internalID: -2102101676120516931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fox Running_6
+      name: Gnome Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 153
-        height: 139
+        width: 81
+        height: 150
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77c724746116baee0800000000000000
-      internalID: -1248797723352466313
+      spriteID: 7bccb391403f17b20800000000000000
+      internalID: 3130550414927973559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fox Running_7
+      name: Gnome Idle_1
       rect:
         serializedVersion: 2
-        x: 153
+        x: 81
         y: 0
-        width: 153
-        height: 139
+        width: 81
+        height: 150
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 677caf67439cb2280800000000000000
-      internalID: -9066932197608732810
+      spriteID: a08eb919fe70ab020800000000000000
+      internalID: 2358206080403367946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fox Running_8
+      name: Gnome Idle_2
       rect:
         serializedVersion: 2
-        x: 306
+        x: 162
         y: 0
-        width: 153
-        height: 139
+        width: 81
+        height: 150
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ec2e2868ff5b48f0800000000000000
-      internalID: -555244608545739551
+      spriteID: c585fd7c66fbfa920800000000000000
+      internalID: 3003829924640282716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fox Running_9
+      name: Gnome Idle_3
       rect:
         serializedVersion: 2
-        x: 459
+        x: 243
         y: 0
-        width: 153
-        height: 139
+        width: 81
+        height: 150
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8055b918ff479bd20800000000000000
-      internalID: 3294793243138151688
+      spriteID: 9b0554deef7a7e9e0800000000000000
+      internalID: -1592119229907906375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fox Running_10
+      name: Gnome Idle_4
       rect:
         serializedVersion: 2
-        x: 612
+        x: 324
         y: 0
-        width: 153
-        height: 139
+        width: 81
+        height: 150
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d4c71395303d490800000000000000
-      internalID: -7722825254393066200
+      spriteID: 2283bc1d5af08fbe0800000000000000
+      internalID: -1443386475708467166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fox Running_11
+      name: Gnome Idle_5
       rect:
         serializedVersion: 2
-        x: 765
+        x: 405
         y: 0
-        width: 153
-        height: 139
+        width: 81
+        height: 150
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,8 +239,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7010518f94cc83c0800000000000000
-      internalID: -4355890550225760130
+      spriteID: df1ce37023d055860800000000000000
+      internalID: 7517929661485990397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gnome Idle_6
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 0
+        width: 81
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589a5a547082ad510800000000000000
+      internalID: 1574615031417776517
       vertices: []
       indices: 
       edges: []
