@@ -11,7 +11,7 @@ public class DefenderSpawner : MonoBehaviour
 
     private void Start()
     {
-        FindDefenders();
+        defenders = FindObjectsOfType<Defender>();
         starDisplay = FindObjectOfType<StarDisplay>();
     }
 
@@ -30,6 +30,7 @@ public class DefenderSpawner : MonoBehaviour
 
     private void SpawnDefender(Vector2 worldPos)
     {
+        defenders = FindObjectsOfType<Defender>();
         foreach (Defender defender in defenders)
         {
             Vector2 defenderPos = new Vector2(defender.transform.position.x, defender.transform.position.y);
@@ -40,7 +41,6 @@ public class DefenderSpawner : MonoBehaviour
         }
         starDisplay.SpendStars(defender.GetStarCost());
         Defender newDefender = Instantiate(defender, worldPos, defender.transform.rotation);
-        FindDefenders();
     }
 
     private void AttemptToSpawn(Vector2 worldPos)
@@ -66,9 +66,5 @@ public class DefenderSpawner : MonoBehaviour
         float newX = Mathf.RoundToInt(rawWorldPos.x);
         float newY = Mathf.RoundToInt(rawWorldPos.y);
         return new Vector2(newX, newY);
-    }
-    public void FindDefenders()
-    {
-        defenders = FindObjectsOfType<Defender>();
     }
 }

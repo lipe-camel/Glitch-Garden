@@ -16,16 +16,11 @@ public class Attacker : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.left * Time.deltaTime * movementSpeed, Space.Self);
-        UpdateAnimationState();
     }
 
-    private void UpdateAnimationState()
+    public void UpdateAnimationState()
     {
-        if (!currentTarget)
-        {
-            animator.SetBool("isAttacking", false);
-            FindObjectOfType<DefenderSpawner>().FindDefenders(); //TODO get this outta here!!!!!!
-        }
+        animator.SetBool("isAttacking", false);
     }
 
     public void SetMovementSpeed(float speed) //acessed by animation event
