@@ -1111,6 +1111,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3728822475669197431, guid: 920d95676d1f8f7438a2ba2ae338913b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3728822475777679232, guid: 920d95676d1f8f7438a2ba2ae338913b,
         type: 3}
       propertyPath: m_Layer
