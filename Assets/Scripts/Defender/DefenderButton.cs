@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class DefenderButton : MonoBehaviour
 {
     [SerializeField] Defender defenderPrefab;
+    LevelController levelController;
 
     Color32 greyedColor;
 
     private void Start()
     {
         greyedColor = GetComponent<SpriteRenderer>().color;
+        levelController = FindObjectOfType<LevelController>();
         LabelStarCost();
     }
 
@@ -23,6 +25,7 @@ public class DefenderButton : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (levelController.IsGameOver()) { return; }
         var buttons = FindObjectsOfType<DefenderButton>();
         foreach(DefenderButton button in buttons)
         {

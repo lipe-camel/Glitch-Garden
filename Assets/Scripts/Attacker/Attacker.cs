@@ -7,16 +7,18 @@ public class Attacker : MonoBehaviour
     [SerializeField] int damage = 20;
     GameObject currentTarget;
     Animator animator;
+    LevelController levelController;
 
     private void Awake()
     {
-        FindObjectOfType<LevelController>().AttackerSpawned();
-
+        levelController = FindObjectOfType<LevelController>();
+        levelController.AttackerSpawned();
     }
 
     private void OnDestroy()
     {
-        FindObjectOfType<LevelController>().AttackerKilled();
+        if (!levelController) { return; }
+        levelController.AttackerKilled();
     }
 
     private void Start()

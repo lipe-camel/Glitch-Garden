@@ -17,8 +17,17 @@ public class LifeLoser : MonoBehaviour
         if (otherObject.GetComponent<Attacker>())
         {
             lifeDisplay.LoseALife();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        GameObject otherObject = collision.gameObject;
+        if (otherObject.GetComponent<Attacker>())
+        {
             Destroy(otherObject);
         }
+
     }
 
 }

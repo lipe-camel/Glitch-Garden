@@ -28,8 +28,19 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(currentScene + 1);
     }
 
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(currentScene);
+    }
+
     public void LoadStartScene()
     {
         SceneManager.LoadScene("Start Screen");
     }
+
+    public void LoadOptionsScene()
+    {
+        SceneManager.LoadScene("Options Screen");
+    }
+
 }

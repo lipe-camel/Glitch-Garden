@@ -23,7 +23,7 @@ public class LifeDisplay : MonoBehaviour
     {
         lifes--;
         UpdateLifes();
-        if (lifes <= 0) { Lose(); }
+        if (lifes <= 0) { FindObjectOfType<LevelController>().GameOver(); }
     }
 
     private void Lose()

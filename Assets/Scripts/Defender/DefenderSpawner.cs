@@ -7,19 +7,21 @@ public class DefenderSpawner : MonoBehaviour
     [SerializeField] Defender defender;
     Defender[] defenders;
     StarDisplay starDisplay;
+    LevelController levelController;
 
 
     private void Start()
     {
         defenders = FindObjectsOfType<Defender>();
         starDisplay = FindObjectOfType<StarDisplay>();
+        levelController = FindObjectOfType<LevelController>();
     }
 
 
     //Spawn
     private void OnMouseDown()
     {
-        if (!defender) { return; }
+        if (!defender || levelController.IsGameOver()) { return; }
         AttemptToSpawn(GetSquareClicked());
     }
 
