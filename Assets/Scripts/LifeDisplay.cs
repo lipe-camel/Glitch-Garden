@@ -1,15 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class LifeDisplay : MonoBehaviour
 {
-    [SerializeField] int lifes = 3;
+    [SerializeField] int lifes = 5;
     Text text;
 
     private void Start()
     {
+        lifes -= PlayerPrefsController.GetDifficulty();
         text = GetComponent<Text>();
         UpdateLifes();
     }
@@ -24,10 +26,5 @@ public class LifeDisplay : MonoBehaviour
         lifes--;
         UpdateLifes();
         if (lifes <= 0) { FindObjectOfType<LevelController>().GameOver(); }
-    }
-
-    private void Lose()
-    {
-        FindObjectOfType<SceneLoader>().LoadStartScene();
     }
 }
