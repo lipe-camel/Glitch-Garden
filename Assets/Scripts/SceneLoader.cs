@@ -33,6 +33,12 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(currentScene);
     }
 
+    public void LoadFirstLevel()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+
+
     public void LoadStartScene()
     {
         SceneManager.LoadScene("Start Screen");
@@ -41,6 +47,11 @@ public class SceneLoader : MonoBehaviour
     public void LoadOptionsScene()
     {
         SceneManager.LoadScene("Options Screen");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
 }

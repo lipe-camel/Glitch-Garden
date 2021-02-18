@@ -25,13 +25,11 @@ public class LevelController : MonoBehaviour
     public void AttackerSpawned()
     {
         numberOfAttackers++;
-        Debug.Log(numberOfAttackers);
     }
 
     public void AttackerKilled()
     {
         numberOfAttackers--;
-        Debug.Log(numberOfAttackers);
         CheckForEndOfLevel();
     }
 
