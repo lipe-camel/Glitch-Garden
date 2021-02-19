@@ -1,22 +1,36 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
     [SerializeField] Defender defender;
+
+    const string DEFENDER_PARENT_NAME = "Defenders";
+
     Defender[] defenders;
+    GameObject defenderParent;
     StarDisplay starDisplay;
     LevelController levelController;
 
 
     private void Start()
     {
+        CreateDefenderParent();
         defenders = FindObjectsOfType<Defender>();
         starDisplay = FindObjectOfType<StarDisplay>();
         levelController = FindObjectOfType<LevelController>();
     }
 
+    private void CreateDefenderParent()
+    {
+        defenderParent = GameObject.Find(DEFENDER_PARENT_NAME);
+        if (!defenderParent)
+        {
+            Debug.LogError("Please create a GameObject called " + DEFENDER_PARENT_NAME);
+        }
+    }
 
     //Spawn
     private void OnMouseDown()
@@ -42,7 +56,7 @@ public class DefenderSpawner : MonoBehaviour
             }
         }
         starDisplay.SpendStars(defender.GetStarCost());
-        Defender newDefender = Instantiate(defender, worldPos, defender.transform.rotation);
+        Instantiate(defender, worldPos, defender.transform.rotation, defenderParent.transform);
     }
 
     private void AttemptToSpawn(Vector2 worldPos)

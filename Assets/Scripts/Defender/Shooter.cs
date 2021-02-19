@@ -50,7 +50,6 @@ public class Shooter : MonoBehaviour
 
     public void Fire() //acessed my animator controller
     {
-        Projectile myProjectile = Instantiate(projectile, transform.position + projectilePosition, Quaternion.identity);
-        myProjectile.transform.parent = transform;
+        Instantiate(projectile, transform.position + projectilePosition, Quaternion.identity, transform);
     }
 }
